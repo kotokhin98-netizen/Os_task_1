@@ -1,0 +1,314 @@
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1 (main)
+$ sh unix_practice_setup.sh 
+=== Создание учебной среды Unix ===
+
+Создание новой учебной среды в директории: unix_practice
+Создание домашней директории...
+
+=== Учебная среда создана успешно! ===
+
+Структура создана в директории: unix_practice
+
+Основные директории:
+  - home/student/          Домашняя директория пользователя
+  - home/student/Documents Документы
+  - home/student/Downloads Загрузки
+  - home/student/Pictures  Изображения
+  - home/student/Projects  Проекты
+  - etc/                   Конфигурационные файлы
+  - var/                   Переменные данные и логи        
+  - usr/                   Пользовательские программы      
+  - tmp/                   Временные файлы
+
+Для начала работы выполните:
+  cd unix_practice
+
+Откройте файл unix_practice_tasks.md для просмотра заданий 
+
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1 (main)
+$ pwd
+/c/Users/3/Os_task_1
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1 (main)
+$ ls
+README.md  unix_practice/  unix_practice_setup.sh*  unix_practice_tasks.md
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1 (main)
+$
+ *  History restored 
+
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1 (main)
+$ cd unix_practice_setup.sh 
+bash: cd: unix_practice_setup.sh: Not a directory
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1 (main)
+$ cd unix_practice
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice (main)
+$ cd unix_practice_setup.sh
+bash: cd: unix_practice_setup.sh: No such file or directory
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice (main)
+$ cd pwd
+bash: cd: pwd: No such file or directory
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice (main)
+$ pwd
+/c/Users/3/Os_task_1/unix_practice
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice (main)
+$ ls
+etc/  home/  opt/  tmp/  usr/  var/
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice (main)
+$ 6
+bash: 6: command not found
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice (main)
+$ cd home/student/Do
+Documents/ Downloads/ 
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice (main)
+$ cd home/student/Documents/Work/
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student/Documents/Work (main)
+$ ls
+presentation.txt  report_feb.txt  report_jan.txt
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student/Documents/Work (main)
+$ cd ../..
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ cd home/student/Projects/Python/scripts
+bash: cd: home/student/Projects/Python/scripts: No such file or directory
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ cd Projects/Python/scripts
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student/Projects/Python/scripts (main)
+$ cd ../../..
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ ../
+bash: ../: Is a directory
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ ../../../
+bash: ../../../: Is a directory
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ cd Documents 
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student/Documents (main)
+$ cd Work
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student/Documents/Work (main)
+$ cat report_jan.txt
+Отчёт за январь 2024
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student/Documents/Work (main)
+$ cat report_jan.txt report_feb.txt
+Отчёт за январь 2024
+Отчёт за февраль 2024
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student/Documents/Work (main)
+$ ../../../var/log
+bash: ../../../var/log: No such file or directory
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student/Documents/Work (main)
+$ ../../../var
+bash: ../../../var: No such file or directory
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student/Documents/Work (main)
+$ ../../../
+bash: ../../../: Is a directory
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student/Documents/Work (main)
+$ cd ../../../var/log
+bash: cd: ../../../var/log: No such file or directory
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student/Documents/Work (main)
+$ cd ../../../
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home (main)
+$ cd ../
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice (main)
+$ cd var/log/
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/var/log (main)
+$ head -n 5 system.log
+System started
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/var/log (main)
+$ tail -n 5 system.log
+System started
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/var/log (main)
+$ head -n 5 error.log
+Error: sample error
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/var/log (main)
+$ head error.log
+Error: sample error
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/var/log (main)
+$ cd ../../
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice (main)
+$ cd home/student/
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ mkdir MyFirstFolder
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ ls
+archive_me.txt  Desktop/    Downloads/          Learning/  MyFirstFolder/     old_file_2021.txt  Projects/   Videos/
+Backup/         Documents/  important_file.txt  Music/     old_file_2020.txt  Pictures/          TestFiles/
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ mkdir -p MyProjects/WebDev?HTML
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ -R MyProjects
+bash: -R: command not found
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ mkdir -p  Practice/Week1/Day1
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ touch task1.txt, task2.txt, task3.txt, task4.txt, task5.txt
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ ls -1
+archive_me.txt
+Backup/
+Desktop/
+Documents/
+Downloads/
+important_file.txt
+Learning/
+Music/
+MyFirstFolder/
+MyProjects/
+old_file_2020.txt
+old_file_2021.txt
+Pictures/
+Practice/
+Projects/
+task1.txt,
+task2.txt,
+task3.txt,
+task4.txt,
+task5.txt
+TestFiles/
+Videos/
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ rm task1.txt, task2.txt
+rm: cannot remove 'task2.txt': No such file or directory
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ rm task2.txt,
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ rmdir Practice
+rmdir: failed to remove 'Practice': Directory not empty
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ rm -r Practice
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ cd Documets/School
+bash: cd: Documets/School: No such file or directory
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ cp Documents/School/* Backup/
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ cp -r Projects/Website Projects/Website_Old
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ ls Projects/
+Learning/  Python/  Website/  Website_Old/
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ # Переименовать
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ mv important_file.txt very_important.txt
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ # Переместить
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ mv archive_me.txt Backup/
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ find . -name "*.mp3"
+./Music/Classical/mozart.mp3
+./Music/Pop/pop1.mp3
+./Music/Pop/pop2.mp3
+./Music/Rock/song1.mp3
+./Music/Rock/song2.mp3
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ grep -r "Конспект" Documents/
+Documents/School/math_notes.txt:Конспект по математике
+Documents/School/physics_notes.txt:Конспект по физике
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ mkdir -p Organized/{TextFiles,Images,Code}
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ cp TestFiles/*.txt Organized/TextFiles/
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ cp Pictures/Vacation/*.{jpg,png} Organized/Images/ 2>/dev/null || true
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ cp Projects/Python/scripts/*.py Organized/Code/
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ ls Organized/TextFiles/  # task3.txt task4.txt task5.txt
+file1.txt  file2.txt
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ ls Organized/Images/     # beach.jpg mountain.png sunset.jpg
+beach.jpg  mountains.jpg
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ ls Organized/Code/       # script1.py script2.py
+main.py  utils.py
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ find . -name "*old*" -type f -exec mv {} Backup/ \;
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ touch report.txt
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ ls -d Projects/*/ | sed 's|Projects/||; s|/||' > report.txt
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ echo "Всего файлов в Documents:" >> report.txt
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ find Documents/ -type f | wc -l >> report.txt
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ cat report.txt
+Learning/
+Python/
+Website/
+Website_Old/
+Всего файлов в Documents:
+8
+
+3@DESKTOP-22CIRN7 MINGW64 ~/Os_task_1/unix_practice/home/student (main)
+$ 
